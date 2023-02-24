@@ -2,7 +2,7 @@ import {Route, Routes, Navigate} from 'react-router-dom';
 import './index.css';
 
 import LandingPage from './pages/LandingPage/LandingPage';
-import ResumePage from './pages/LandingPage/ResumePage/ResumePage';
+import ResumePage from './pages/ResumePage/ResumePage';
 import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {

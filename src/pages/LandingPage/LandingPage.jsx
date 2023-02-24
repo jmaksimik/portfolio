@@ -1,9 +1,14 @@
 import React from 'react';
 
+import MainBanner from '../../components/MainBanner/MainBanner';
+import AboutMe from '../../components/AboutMe/AboutMe';
+
 export default function LandingPage() {
     return (
-        <div className='text-center'>
-            <h1 className='text-3xl font-bold underline'>Landing Page</h1>
-        </div>
+        <>
+            <MainBanner />
+            <AboutMe />
+        </>
     )
+    
 }
