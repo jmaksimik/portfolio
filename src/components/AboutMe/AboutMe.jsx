@@ -12,6 +12,7 @@ export default function AboutMe() {
                 <PortfolioPic />
             </div>
             <LanguageImages />
+            <a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </div>
     )
 }
