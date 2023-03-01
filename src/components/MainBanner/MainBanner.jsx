@@ -7,19 +7,26 @@ export default function MainBanner() {
         <>
             <div className='flex text-white flex-col justify-center items-center container main-banner max-w-full'>
                 <NavBar />
-                    <p className='text-center text-5xl text-white'>
+                <p className='text-center text-5xl text-white'>
                     Hi, I'm John
+                </p>
+                <div className='type-container'>
+                    <p className='text-center text-3xl text-white mt-3 mb-5 typed'>
+                        Lover of all things tech
                     </p>
-                    <div className='type-container'>
-                        <p className='text-center text-3xl text-white mt-3 mb-5 typed'>
-                            Lover of all things tech
-                        </p>
-                    </div>
-
-                <a className='mr-4' 
-                        href='https://github.com/jmaksimik' target='_blank'>
-                            <img src='src/assets/images/github-icon.png' alt='Github' />
-                </a>                
+                </div>
+                <div className='flex flex-row align-items-center'>
+                    <a className='mr-4'
+                        href='https://github.com/jmaksimik'
+                        target='_blank'>
+                        <img src='src/assets/images/github-icon.png' alt='Github' />
+                    </a>
+                    <a className='mr-4'
+                        href='https://linkedin.com/in/jmaksimik'
+                        target='_blank'>
+                        <img src='src/assets/images/linkedin-icon.png' alt='LinkedIn' style={{ width: 64, height: 64 }} />
+                    </a>
+                </div>
             </div>
         </>
 
