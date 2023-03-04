@@ -19,8 +19,10 @@
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-  margin: 0;
-  padding: 0;
+  box-shadow: 0 4px 12px -6px #222;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  padding-top: 2px;
 }
 
 .language-icons {

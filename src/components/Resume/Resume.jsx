@@ -20,7 +20,7 @@ export default function Resume(props) {
 
 
     return (
-        <div className='container mx-w-full mt-32 flex flex-col items-center bg-slate-100'>
+        <div className='container mx-w-full mt-32 flex flex-col items-center'>
             <p className='text-3xl'>Resume</p>
             <div>
                 <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>

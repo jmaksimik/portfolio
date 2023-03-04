@@ -11,7 +11,7 @@ const languageList = [
 
 export default function LanguageImages() {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto drop-shadow-sm'>
             <p className='text-center text-4xl mt-5'>Languages</p>
             <div className='flex-row columns-5 mt-12 justify-center'>
                 {languageList.map((language, index) => {
