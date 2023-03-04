@@ -5,10 +5,10 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import Projects from '../../components/ProjectList/ProjectList';
 import LanguageImages from '../../components/LanguageImages/LanguageImages';
 
-export default function LandingPage() {
+export default function LandingPage({isLandingPage, handleLandingPage}) {
     return (
         <>
-            <MainBanner />
+            <MainBanner isLandingPage={isLandingPage} handleLandingPage={handleLandingPage} />
             <AboutMe />
             <LanguageImages />
             <Projects />

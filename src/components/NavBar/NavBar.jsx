@@ -1,34 +1,59 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export default function NavBar() {
-    return (
-        <nav className='flex flex-row justify-start justify-between flex-wrap mr-6 bg-transparent absolute top-5 left-5'>
-            <div className='block lg:hidden bg-transparent'>
-                <button className='flex items-center px-3 py-2 border rounded hover:text-black'>
-                    Menu
-                </button>
-            </div>
-            <div className='w-full block flex-grow lg:flex lg:items-start lg:w-auto'>
-                <div className='text-lg lg:flex-grow'>
-                    <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                          to='/portfolio'>
-                            Home
-                          </Link>
-                </div>
-                <div className='text-lg lg:flex-grow'>
-                    <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                          to='/portfolio/resume'>
-                            Resume
-                    </Link>
-                    <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                          to='/portfolio/contact'>
-                            Get in Touch
-                          </Link>
-                </div>
-            </div>
+export default function NavBar({isLandingPage}) {
 
-        </nav>
+    if (isLandingPage) {
+        return (
+            <nav className='flex flex-row text-white mr-6 bg-transparent absolute top-5 left-5'>
+                <div className='w-full block flex-grow lg:flex lg:items-start lg:w-auto'>
+                    <div className='text-lg lg:flex-grow'>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio'>
+                                Home
+                              </Link>
+                    </div>
+                    <div className='text-lg lg:flex-grow'>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio/resume'>
+                                Resume
+                        </Link>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio/contact'>
+                                Get in Touch
+                              </Link>
+                    </div>
+                </div>
+    
+            </nav>
+        )
+    } return (
+        <nav className='navbar-special'>
+                <div className='block lg:hidden bg-transparent'>
+                    <button className='flex items-center px-3 py-2 border rounded hover:text-black'>
+                        Menu
+                    </button>
+                </div>
+                <div className='block flex-grow lg:flex lg:items-start lg:w-auto'>
+                    <div className='text-lg lg:flex-grow'>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio'>
+                                Home
+                              </Link>
+                    </div>
+                    <div className='text-lg lg:flex-grow'>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio/resume'>
+                                Resume
+                        </Link>
+                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                              to='/portfolio/contact'>
+                                Get in Touch
+                              </Link>
+                    </div>
+                </div>
+    
+            </nav>
     )
 }
 

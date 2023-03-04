@@ -14,19 +14,22 @@ export default function Resume(props) {
     const [file, setFile] = useState('../../src/assets/jm-resume.pdf')
     const [numPages, setNumPages] = useState(null);
 
-    function onDocumentLoadSuccess({numPages: nextNumPages}){
+    function onDocumentLoadSuccess({ numPages: nextNumPages }) {
         setNumPages(nextNumPages);
     }
 
 
     return (
-        <div className='container mx-w-full mt-32 flex flex-col content-center'>
+        <div className='container mx-w-full mt-32 flex flex-col items-center bg-slate-100'>
             <p className='text-3xl'>Resume</p>
-            <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
-                {Array.from(new Array(numPages), (el, index) => (
-                    <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-                ))}
-            </Document>
+            <div>
+                <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+                    {Array.from(new Array(numPages), (el, index) => (
+                        <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+                    ))}
+                </Document>
+            </div>
+
         </div>
 
 
