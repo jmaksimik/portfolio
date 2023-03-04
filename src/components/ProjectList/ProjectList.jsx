@@ -32,8 +32,8 @@ export default function ProjectList() {
 
     return (
         <>
-            <div className='container max-w-full mt-10 bg-slate-100 drop-shadow-sm'>
-                <p className='text-center text-3xl font-bold underline'>My Projects</p>
+            <div className='container max-w-full py-10 bg-slate-100 drop-shadow-sm'>
+                <p className='text-center text-3xl'>My Projects</p>
                 <div className='flex flex-row justify-center mt-5 gap-12'>
                     {projectList.map((project, index) => {
                         return (
