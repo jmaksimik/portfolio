@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 export default function NavBar() {
     return (
-        <nav className='flex flex-row justify-start justify-between flex-wrap  mr-6 bg-transparent absolute top-5 left-5'>
+        <nav className='flex flex-row justify-start justify-between flex-wrap mr-6 bg-transparent absolute top-5 left-5'>
             <div className='block lg:hidden bg-transparent'>
                 <button className='flex items-center px-3 py-2 border rounded hover:text-black'>
                     Menu

@@ -6,7 +6,8 @@ module.exports = {
     './index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }
