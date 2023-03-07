@@ -7,7 +7,7 @@ import jmResume from '../../assets/jm-resume.pdf';
 
 export default function ResumePage({isLandingPage}) {
     return (
-        <div className='text-center'>
+        <div>
             <NavBar />
             <Resume pdf={jmResume} />
         </div>

@@ -9,17 +9,19 @@ export default function NavBar({ isLandingPage }) {
         return (
             <nav className='flex flex-row text-white mr-6 bg-transparent absolute top-5 left-8'>
                 <div className='block flex-grow lg:flex lg:items-start lg:w-auto'>
-                    <div className='text-lg lg:flex-grow hidden md:block'>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
                         <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                             to='/portfolio'>
                             Home
                         </Link>
                     </div>
-                    <div className='text-lg lg:flex-grow hidden md:block'>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
                         <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                             to='/portfolio/resume'>
                             Resume
                         </Link>
+                    </div>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
                         <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                             to='/portfolio/contact'>
                             Get in Touch
@@ -28,7 +30,7 @@ export default function NavBar({ isLandingPage }) {
 
                     {/* Mobile Menu */}
 
-                    <div className='-mr-2 flex md:hidden'>
+                    <div className='-mr-2 flex lg:hidden'>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type='button'
@@ -107,7 +109,7 @@ export default function NavBar({ isLandingPage }) {
         <nav className='navbar-special'>
             <div className='px-4 sm:px-6 lg:px-8 text-white'>
                 <div className='flex items-center justify-between h-16'>
-                    <div className='hidden md:block'>
+                    <div className='hidden lg:block'>
                         <div className='flex items-start'>
                             <div className='text-lg lg:flex-grow'>
                                 <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
@@ -130,7 +132,7 @@ export default function NavBar({ isLandingPage }) {
                     </div>
                                         {/* Mobile Menu */}
 
-                    <div className='-mr-2 flex md:hidden'>
+                    <div className='-mr-2 flex lg:hidden'>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type='button'
@@ -186,7 +188,7 @@ export default function NavBar({ isLandingPage }) {
                     leaveTo='opacity-0 scale-95'
                 >
                     {(ref) => (
-                        <div className='md:hidden' id='mobile-menu'>
+                        <div className='lg:hidden' id='mobile-menu'>
                             <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                                 <Link className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-4'
                                     to='/portfolio'>
