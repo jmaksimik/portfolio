@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Transition } from '@headlessui/react'
 
-export default function NavBar({ isLandingPage }) {
+export default function NavBar({ isMainBanner }) {
     const [isOpen, setIsOpen] = useState(false);
 
-    if (isLandingPage) {
+    if (isMainBanner) {
         return (
             <nav className='flex flex-row text-white mr-6 bg-transparent absolute top-5 left-8'>
                 <div className='block flex-grow lg:flex lg:items-start lg:w-auto'>

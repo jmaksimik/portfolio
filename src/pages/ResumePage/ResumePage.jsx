@@ -5,7 +5,7 @@ import Resume from "../../components/Resume/Resume";
 
 import jmResume from '../../assets/jm-resume.pdf';
 
-export default function ResumePage({isLandingPage}) {
+export default function ResumePage() {
     return (
         <div>
             <NavBar />

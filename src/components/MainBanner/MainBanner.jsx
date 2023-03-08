@@ -2,12 +2,12 @@ import React from "react";
 
 import NavBar from "../NavBar/NavBar";
 
-export default function MainBanner({ isLandingPage }) {
+export default function MainBanner({ isMainBanner }) {
     return (
         <>
             <div className='flex text-white flex-col justify-center items-center container main-banner max-w-full drop-shadow-xl'>
-                <NavBar isLandingPage={isLandingPage} />
-                <p className='text-center text-5xl text-white font-apple'>
+                <NavBar isMainBanner={isMainBanner} />
+                <p className='text-center text-5xl text-white'>
                     Hi, I'm John
                 </p>
                 <div className='type-container'>

@@ -27,14 +27,22 @@ export default function ProjectList() {
             description: 'Django-based EHR platform where users can upload medical files, add and track prescriptions and appointments, and much more. Worked on in conjunction with three other developers due to the sheer scope of the project.',
             githubLink: 'https://github.com/jmaksimik/PoH',
             deployedLink: 'https://snowy-sky-6053.fly.dev/'
+        },
+        {
+            title: 'My Portfolio',
+            technologies: 'HTML5, Tailwind CSS, CSS, JS, React.js',
+            imageSource: 'src/assets/images/Portfolio.PNG',
+            description: 'The source code for my portfolio, built from scratch in React. I experimented with several dependencies, including Tailwind, React-pdf, and @headlessui.',
+            githubLink: 'https://github.com/jmaksimik/portfolio',
+            deployedLink: ''
         }
     ]
 
     return (
         <>
             <div className='container max-w-full py-10 drop-shadow-sm'>
-                <p className='text-center text-3xl'>My Projects</p>
-                <div className='flex flex-row justify-center mt-10 gap-12'>
+                <p className='text-center text-3xl font-thin'>My Projects</p>
+                <div className='flex flex-row justify-center mt-10 gap-12 flex-wrap'>
                     {projectList.map((project, index) => {
                         return (
                             <ProjectCard
