@@ -1,11 +1,11 @@
 import React from "react";
 
 const languageList = [
-    { source: '/CSS.png', description: 'CSS' },
-    { source: '/JS.png', description: 'JS' },
-    { source: '/Python.png', description: 'Python' },
-    { source: '/Node.png', description: 'Node.js' },
-    { source: '/React.png', description: 'React' }
+    { source: './CSS.png', description: 'CSS' },
+    { source: './JS.png', description: 'JS' },
+    { source: './Python.png', description: 'Python' },
+    { source: './Node.png', description: 'Node.js' },
+    { source: './React.png', description: 'React' }
 
 ]
 
