@@ -11,7 +11,7 @@ const options = {
 
 
 export default function Resume({props}) {
-    const [file, setFile] = useState('/jm-resume.pdf')
+    const [file, setFile] = useState('./jm-resume.pdf')
     const [numPages, setNumPages] = useState(null);
 
     function onDocumentLoadSuccess({ numPages: nextNumPages }) {
