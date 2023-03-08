@@ -27,7 +27,7 @@
 
 .language-icons {
   max-width: 200px;
-  max-height: 200px;
+  max-height: 150px;
 }
 
 .typed {
@@ -38,6 +38,12 @@
   animation-duration: 1.5s; 
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
+}
+
+.resume {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  max-width: calc(100% - 2em);
 }
 
 @keyframes gradient {

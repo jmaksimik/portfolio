@@ -12,8 +12,8 @@ const languageList = [
 export default function LanguageImages() {
     return (
         <div className='container mx-auto drop-shadow-sm py-10'>
-            <p className='text-center text-3xl mt-5'>Languages</p>
-            <div className='flex-row columns-5 mt-12 justify-center'>
+            <p className='text-center text-3xl'>Languages</p>
+            <div className='flex flex-row justify-center gap-20 mt-10 flex-wrap'>
                 {languageList.map((language, index) => {
                     return (
                         <img src={language.source} alt={language.description} className='language-icons' key={index} />
