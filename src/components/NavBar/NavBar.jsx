@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Transition } from '@headlessui/react'
+import { HashLink } from 'react-router-hash-link';
 
 export default function NavBar({ isMainBanner }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +17,34 @@ export default function NavBar({ isMainBanner }) {
                         </Link>
                     </div>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
+                        <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                  smooth to={'/portfolio#AboutMe'}>
+                            About Me
+                        </HashLink>
+                    </div>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
+                        <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                  smooth to={'/portfolio#Skills'}>
+                            Skills
+                        </HashLink>
+                    </div>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
+                        <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                  smooth to={'/portfolio#Projects'}>
+                            Projects
+                        </HashLink>
+                    </div>
+                    <div className='text-lg lg:flex-grow hidden lg:block'>
                         <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                             to='/portfolio/resume'>
                             Resume
                         </Link>
                     </div>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
-                        <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                            to='/portfolio/contact'>
+                        <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                            smooth to={'/portfolio/#Contact'}>
                             Get in Touch
-                        </Link>
+                        </HashLink>
                     </div>
 
                     {/* Mobile Menu */}

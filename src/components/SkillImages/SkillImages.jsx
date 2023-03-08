@@ -1,17 +1,17 @@
 import React from "react";
 
 const languageList = [
-    { source: 'src/assets/images/CSS.png', description: 'CSS' },
-    { source: 'src/assets/images/JS.png', description: 'JS' },
-    { source: 'src/assets/images/Python.png', description: 'Python' },
-    { source: 'src/assets/images/Node.png', description: 'Node.js' },
-    { source: 'src/assets/images/React.png', description: 'React' }
+    { source: '/src/assets/images/CSS.png', description: 'CSS' },
+    { source: '/src/assets/images/JS.png', description: 'JS' },
+    { source: '/src/assets/images/Python.png', description: 'Python' },
+    { source: '/src/assets/images/Node.png', description: 'Node.js' },
+    { source: '/src/assets/images/React.png', description: 'React' }
 
 ]
 
 export default function SkillImages() {
     return (
-        <div className='container max-w-full drop-shadow-sm py-10 bg-slate-100'>
+        <div className='container max-w-full drop-shadow-sm py-10 bg-slate-100' id='Skills'>
             <p className='text-center text-3xl font-thin'>Skills</p>
             <div className='flex flex-row justify-center gap-20 mt-10 flex-wrap'>
                 {languageList.map((language, index) => {

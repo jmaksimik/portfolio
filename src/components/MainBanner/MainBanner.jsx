@@ -19,12 +19,12 @@ export default function MainBanner({ isMainBanner }) {
                     <a className='mr-4'
                         href='https://github.com/jmaksimik'
                         target='_blank'>
-                        <img src='src/assets/images/github-icon.png' alt='Github' />
+                        <img src='/src/assets/images/github-icon.png' alt='Github' />
                     </a>
                     <a className='mr-4'
                         href='https://linkedin.com/in/jmaksimik'
                         target='_blank'>
-                        <img src='src/assets/images/linkedin-icon.png' alt='LinkedIn' style={{ width: 64, height: 64 }} />
+                        <img src='/src/assets/images/linkedin-icon.png' alt='LinkedIn' style={{ width: 64, height: 64 }} />
                     </a>
                 </div>
             </div>
