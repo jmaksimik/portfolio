@@ -24,7 +24,7 @@ export default function ProjectList() {
             title: 'Pursuit of HealthYNess',
             technologies: 'Python, Django, HTML5, CSS, JS, AWS(S3)',
             imageSource: 'src/assets/images/PoH.png',
-            description: 'Django-based EHR where users can upload medical files, add and track prescriptions and appointments, and much more. Worked on in conjunction with three other developers due to the sheer scope of the project.',
+            description: 'Django-based EHR platform where users can upload medical files, add and track prescriptions and appointments, and much more. Worked on in conjunction with three other developers due to the sheer scope of the project.',
             githubLink: 'https://github.com/jmaksimik/PoH',
             deployedLink: 'https://snowy-sky-6053.fly.dev/'
         }
@@ -32,9 +32,9 @@ export default function ProjectList() {
 
     return (
         <>
-            <div className='container max-w-full py-10 bg-slate-100 drop-shadow-sm'>
+            <div className='container max-w-full py-10 drop-shadow-sm'>
                 <p className='text-center text-3xl'>My Projects</p>
-                <div className='flex flex-row justify-center mt-5 gap-12'>
+                <div className='flex flex-row justify-center mt-10 gap-12'>
                     {projectList.map((project, index) => {
                         return (
                             <ProjectCard

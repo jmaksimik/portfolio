@@ -9,10 +9,10 @@ const languageList = [
 
 ]
 
-export default function LanguageImages() {
+export default function SkillImages() {
     return (
-        <div className='container mx-auto drop-shadow-sm py-10'>
-            <p className='text-center text-3xl'>Languages</p>
+        <div className='container max-w-full drop-shadow-sm py-10 bg-slate-100'>
+            <p className='text-center text-3xl'>Skills</p>
             <div className='flex flex-row justify-center gap-20 mt-10 flex-wrap'>
                 {languageList.map((language, index) => {
                     return (
