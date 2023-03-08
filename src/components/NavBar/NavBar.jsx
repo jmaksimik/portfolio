@@ -171,10 +171,10 @@ export default function NavBar({ isMainBanner }) {
                                     to='/portfolio/resume'>
                                     Resume
                                 </Link>
-                                <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                                    to='/portfolio/contact'>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio/#Contact'}>
                                     Get in Touch
-                                </Link>
+                                </HashLink>
 
                             </div>
                         </div>
