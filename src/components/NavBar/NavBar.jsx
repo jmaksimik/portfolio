@@ -18,19 +18,19 @@ export default function NavBar({ isMainBanner }) {
                     </div>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
                         <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                                  smooth to={'/portfolio#AboutMe'}>
+                            smooth to={'/portfolio#AboutMe'}>
                             About Me
                         </HashLink>
                     </div>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
                         <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                                  smooth to={'/portfolio#Skills'}>
+                            smooth to={'/portfolio#Skills'}>
                             Skills
                         </HashLink>
                     </div>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
                         <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                                  smooth to={'/portfolio#Projects'}>
+                            smooth to={'/portfolio#Projects'}>
                             Projects
                         </HashLink>
                     </div>
@@ -110,14 +110,26 @@ export default function NavBar({ isMainBanner }) {
                                     to='/portfolio'>
                                     Home
                                 </Link>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#AboutMe'}>
+                                    About Me
+                                </HashLink>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#Skills'}>
+                                    Skills
+                                </HashLink>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#Projects'}>
+                                    Projects
+                                </HashLink>
                                 <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                                     to='/portfolio/resume'>
                                     Resume
                                 </Link>
-                                <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
-                                    to='/portfolio/contact'>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio/#Contact'}>
                                     Get in Touch
-                                </Link>
+                                </HashLink>
                             </div>
                         </div>
                     )}
@@ -137,6 +149,24 @@ export default function NavBar({ isMainBanner }) {
                                 </Link>
                             </div>
                             <div className='text-lg lg:flex-grow'>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#AboutMe'}>
+                                    About Me
+                                </HashLink>
+                            </div>
+                            <div className='text-lg lg:flex-grow'>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#Skills'}>
+                                    Skills
+                                </HashLink>
+                            </div>
+                            <div className='text-lg lg:flex-grow'>
+                                <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                    smooth to={'/portfolio#Projects'}>
+                                    Projects
+                                </HashLink>
+                            </div>
+                            <div className='text-lg lg:flex-grow'>
                                 <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
                                     to='/portfolio/resume'>
                                     Resume
@@ -145,11 +175,11 @@ export default function NavBar({ isMainBanner }) {
                                     to='/portfolio/contact'>
                                     Get in Touch
                                 </Link>
-                                
+
                             </div>
                         </div>
                     </div>
-                                        {/* Mobile Menu */}
+                    {/* Mobile Menu */}
 
                     <div className='-mr-2 flex lg:hidden'>
                         <button
@@ -198,33 +228,45 @@ export default function NavBar({ isMainBanner }) {
                 </div>
             </div>
             <Transition
-                    show={isOpen}
-                    enter='transition ease-out duration-100 transform'
-                    enterFrom='opacity-0 scale-95'
-                    enterTo='opacity-100 scale-100'
-                    leave='transition ease-in duration-75 transform'
-                    leaveFrom='opacity-100 scale-100'
-                    leaveTo='opacity-0 scale-95'
-                >
-                    {(ref) => (
-                        <div className='lg:hidden' id='mobile-menu'>
-                            <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-                                <Link className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-4'
-                                    to='/portfolio'>
-                                    Home
-                                </Link>
-                                <Link className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-4'
-                                    to='/portfolio/resume'>
-                                    Resume
-                                </Link>
-                                <Link className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-4'
-                                    to='/portfolio/contact'>
-                                    Get in Touch
-                                </Link>
-                            </div>
+                show={isOpen}
+                enter='transition ease-out duration-100 transform'
+                enterFrom='opacity-0 scale-95'
+                enterTo='opacity-100 scale-100'
+                leave='transition ease-in duration-75 transform'
+                leaveFrom='opacity-100 scale-100'
+                leaveTo='opacity-0 scale-95'
+            >
+                {(ref) => (
+                    <div className='lg:hidden' id='mobile-menu'>
+                        <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3 text-white'>
+                            <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                to='/portfolio'>
+                                Home
+                            </Link>
+                            <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                smooth to={'/portfolio#AboutMe'}>
+                                About Me
+                            </HashLink>
+                            <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                smooth to={'/portfolio#Skills'}>
+                                Skills
+                            </HashLink>
+                            <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                smooth to={'/portfolio#Projects'}>
+                                Projects
+                            </HashLink>
+                            <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                to='/portfolio/resume'>
+                                Resume
+                            </Link>
+                            <HashLink className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
+                                smooth to={'/portfolio/#Contact'}>
+                                Get in Touch
+                            </HashLink>
                         </div>
-                    )}
-                </Transition>
+                    </div>
+                )}
+            </Transition>
         </nav>
     )
 }
