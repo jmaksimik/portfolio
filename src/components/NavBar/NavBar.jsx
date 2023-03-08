@@ -8,7 +8,7 @@ export default function NavBar({ isMainBanner }) {
 
     if (isMainBanner) {
         return (
-            <nav className='flex flex-row text-white mr-6 bg-transparent absolute top-5 left-8'>
+            <nav className='flex flex-row text-white mr-6 bg-transparent absolute top-5 left-8' id='Top'>
                 <div className='block flex-grow lg:flex lg:items-start lg:w-auto'>
                     <div className='text-lg lg:flex-grow hidden lg:block'>
                         <Link className='block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4'
