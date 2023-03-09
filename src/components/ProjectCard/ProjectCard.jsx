@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProjectCard({project}) {
+export default function ProjectCard({ project }) {
     return (
         <div className='max-w-sm rounded overflow-hidden shadow-lg hover:scale-110 transform transition duration-500'>
             <img className='w-full' src={project.imageSource} alt={project.title} />
@@ -10,9 +10,11 @@ export default function ProjectCard({project}) {
                     {project.description}
                 </p>
                 <br></br>
-                <a className='text-blue-600 hover:text-black' href={project.githubLink}>GitHub Link</a>
+                <a className='text-blue-600 hover:text-black' href={project.githubLink} target='_blank'>GitHub Link</a>
                 <br></br>
-                <a className='text-blue-600 hover:text-black' href={project.deployedLink}>Deployed Link</a>
+                {project.title != 'My Portfolio' &&
+                    <a className='text-blue-600 hover:text-black' href={project.deployedLink} target='_blank'>Deployed Link</a>
+                }
             </div>
         </div>
     )
