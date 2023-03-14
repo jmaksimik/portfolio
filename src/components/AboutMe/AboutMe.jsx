@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <div className='container max-w-full bg-slate-200 drop-shadow-sm py-10' id='AboutMe'>
             <p className='text-center text-3xl font-thin'>About Me</p>
-            <div className='flex flex-row flex-wrap justify-center mt-10 ml-10 gap-20'>
+            <div className='flex flex-row flex-wrap justify-center mt-10 ml-10 gap-20 sm:max-md:flex-column'>
                 <p className='text-left inline-block w-96 mt-4 font-thin text-lg '>I'm John Maksimik, a full-stack software developer who loves solving complex business problems. 
                 I thrive on challenges and the rush of excitement I feel when the solution inevitably comes. 
                 <br></br><br></br>

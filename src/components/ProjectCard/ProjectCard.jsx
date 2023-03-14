@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProjectCard({ project }) {
     return (
-        <div className='max-w-sm rounded overflow-hidden shadow-lg hover:scale-110 transform transition duration-500'>
+        <div className='max-w-sm rounded overflow-hidden shadow-lg hover:scale-110 transform transition duration-500 mx-5'>
             <img className='w-full' src={project.imageSource} alt={project.title} />
             <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2'>{project.title}</div>
